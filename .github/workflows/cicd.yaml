@@ -7,35 +7,22 @@ on:
     branches: [ master ]
 
 jobs:
-  install:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Install pnpm
-        run: npm install -g pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       - name: Install dependencies
         run: pnpm install
-
-  run:
-    runs-on: ubuntu-latest
-    needs: install
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install pnpm
-        run: npm install -g pnpm
 
       - name: Run valid.json script
         run: pnpm valid
@@ -47,21 +34,21 @@ jobs:
         run: pnpm eleves_mixed
 
   test:
+    needs: build
     runs-on: ubuntu-latest
-    needs: run
     steps:
       - uses: actions/checkout@v3
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Install pnpm
-        run: npm install -g pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       - name: Install dependencies
         run: pnpm install
-
       - name: Run tests
         run: pnpm test
