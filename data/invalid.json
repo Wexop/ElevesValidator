@@ -1,0 +1,74 @@
+{
+  "eleves": [
+    {
+      "prenom": "",
+      "nom": "Dupont",
+      "date_naissance": "2006-04-22",
+      "email": "jean.dupont@example.com",
+      "note_moyenne": 14.5
+    },
+    {
+      "prenom": "Sophie",
+      "nom": "Martin",
+      "date_naissance": "2005-14-10",
+      "email": "sophie.martin@example.com",
+      "note_moyenne": 16.3
+    },
+    {
+      "prenom": "Luc",
+      "nom": "",
+      "date_naissance": "2007-01-30",
+      "email": "luc.bernard@example.com",
+      "note_moyenne": 12
+    },
+    {
+      "prenom": "Marie",
+      "nom": "Lemoine",
+      "date_naissance": "2006-11-05",
+      "email": "marie.lemoineatexample.com",
+      "note_moyenne": 18.7
+    },
+    {
+      "prenom": "Paul",
+      "nom": "Robert",
+      "date_naissance": "2004-06-25",
+      "email": "paul.robert@example.com",
+      "note_moyenne": 21
+    },
+    {
+      "prenom": "Claire",
+      "nom": "Blanc",
+      "date_naissance": "invalid-date",
+      "email": "claire.blanc@example.com",
+      "note_moyenne": 15
+    },
+    {
+      "prenom": "Thomas",
+      "nom": "Faure",
+      "date_naissance": "2007-03-12",
+      "email": "thomas.faure@example.com",
+      "note_moyenne": -1
+    },
+    {
+      "prenom": "Isabelle",
+      "nom": "Petit",
+      "date_naissance": "2026-12-01",
+      "email": "isabelle.petit@example.com",
+      "note_moyenne": 17.4
+    },
+    {
+      "prenom": "Antoine",
+      "nom": "Girard",
+      "date_naissance": "2005-07-19",
+      "email": "antoine.girard@example.com",
+      "note_moyenne": null
+    },
+    {
+      "prenom": "Emma",
+      "nom": "Fontaine",
+      "date_naissance": "",
+      "email": "emma.fontaine@example.com",
+      "note_moyenne": 16.2
+    }
+  ]
+}
