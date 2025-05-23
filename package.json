@@ -5,7 +5,8 @@
     "valid": "ts-node src/index.ts data/valid.json",
     "invalid": "ts-node src/index.ts data/invalid.json",
     "eleves_mixed": "ts-node src/index.ts data/eleves_mixed.json",
-    "test": "jest"
+    "test": "jest",
+    "ci:local": "node ci-local.js"
   },
   "devDependencies": {
     "@types/jest": "^29.0.0",
