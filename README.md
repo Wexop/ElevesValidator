@@ -24,3 +24,6 @@ pnpm install
 
 - `pnpm test`  
   Lance les tests unitaires avec Jest.
+
+- `pnpm ci:local`  
+  Lance la CI local simulée
